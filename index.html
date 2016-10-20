@@ -8,6 +8,121 @@
     <title>Who's Your Hot Celebrity Match?</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Celebrity Matchmaker</h1>
+      <h2>Tell us about yourself and we'll tell you who your celebrity match is.</h2>
 
+      <form id="celebrity">
+        <div class="form-group">
+          <label for="exampleInputName2">Your name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Jane Doe">
+        </div>
+
+        <div class="form-group has-success">
+          <label class="control-label" for="inputSuccess1">Your name:</label>
+          <input type="text" class="form-control" id="nameSuccess" aria-describedby="helpBlock2">
+          <span id="helpBlock2" class="help-block"></span>
+        </div>
+
+        <div class="form-group has-error">
+          <label class="control-label" for="inputError1">Your name:</label>
+          <input type="text" class="form-control" id="nameError">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputName2">Your age:</label>
+          <input type="text" class="form-control" id="age" placeholder="Jane Doe">
+        </div>
+
+        <div class="form-group has-success">
+          <label class="control-label" for="inputSuccess1">Your age:</label>
+          <input type="text" class="form-control" id="ageSuccess" aria-describedby="helpBlock3">
+          <span id="helpBlock2" class="help-block"></span>
+        </div>
+
+        <div class="form-group has-error">
+          <label class="control-label" for="inputError1">Your age:</label>
+          <input type="text" class="form-control" id="ageError">
+        </div>
+
+        <select class="form-control" id="gender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Non Binary</option>
+        </select>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="homosexual"> Homosexual
+          </label>
+        </div>
+
+        <div class="has-success">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="homosexualSuccess" value="option1">
+              Homosexual
+            </label>
+          </div>
+        </div>
+
+        <div class="has-error">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="homosexualError" value="option1">
+              Homosexual
+            </label>
+          </div>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="heterosexual"> Heterosexual
+          </label>
+        </div>
+
+        <div class="has-success">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="heterosexualSuccess" value="option1">
+              Heterosexual
+            </label>
+          </div>
+        </div>
+
+        <div class="has-error">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="heterosexualError" value="option1">
+              Heterosexual
+            </label>
+          </div>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="other"> Other
+          </label>
+        </div>
+
+        <div class="has-success">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="otherSuccess" value="option1">
+              Other
+            </label>
+          </div>
+        </div>
+
+        <div class="has-error">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="otherError" value="option1">
+              Other
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
