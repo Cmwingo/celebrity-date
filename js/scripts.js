@@ -2,6 +2,7 @@ $(document).ready(function() {
   $("form#celebrity").submit(function(event){
     //UI Logic
 
+/*
     var pass = false;
     var age = parseInt($("input#age").val());
     var name = $("input#name").val();
@@ -13,30 +14,34 @@ $(document).ready(function() {
       //   $("#ageInput").hide();
       //   $("#ageInputError").show();
       // }
-      debugger;
       if(!age) {
-        alert("Age is blank")
-        $("#ageInput").hide();
-        $("#ageInputError").show();
+        alert("Age is blank");
+        //$("#ageInput").addClass("has-error");
         } else {
-        $("#ageInputSuccess").show();
-        $("#ageInput").hide();
+        $("#ageInput").addClass("has-success");
       }
       if(!name) {
-        alert("Name is blank")
-        $("#nameInput").hide();
-        $("#nameInputError").show();
+        alert("Name is blank");
+        $("#nameInput").addClass("has-error");
         } else {
-        $("nameInputSuccess").show();
+        $("#nameInput").addClass("has-success");
       }
     } else {
       pass = true;
-    }
-
+    }*/
+    $("#celebrityMatch").show();
+        event.preventDefault();
+      });
+    });
     //Business Logic
 
+var match = function(age, gender, preference) {
+  age = parseInt(age);
+  if (age >= 55){
 
+  } else if (age > 30 && age < 55) {
 
-    event.preventDefault();
-  });
-});
+  } else{
+
+  }
+}
